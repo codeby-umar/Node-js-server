@@ -1,0 +1,111 @@
+path.join() -
+Bir nechta yo‘l bo‘laklarini bitta to‘g‘ri path qilib birlashtiradi.
+Masalan, papka nomi, ichidagi fayl nomi kabi qismlarni ulab beradi.
+Keraksiz slashlarni ham tartibga soladi.
+
+path.resolve()
+
+Berilgan yo‘llardan to‘liq, absolute path yasab beradi.
+Agar nisbiy yo‘l bo‘lsa, uni hozirgi ishchi papkaga qarab to‘liq yo‘lga aylantiradi.
+
+path.basename()
+
+Path ichidan faqat oxirgi qismni ajratib beradi.
+Odatda bu fayl nomi yoki oxirgi papka nomi bo‘ladi.
+
+path.dirname()
+
+Berilgan path ichidan fayl turgan papka yo‘lini qaytaradi.
+Ya’ni oxirgi nomni olib tashlab, parent directory ni beradi.
+
+path.extname()
+
+Faylning kengaytmasini aniqlaydi.
+Masalan, .js, .png, .html kabi oxirgi extension qismini qaytaradi.
+
+path.parse()
+
+Path ni bo‘laklarga ajratib beradi.
+Ya’ni:
+
+root
+
+directory
+
+base
+
+extension
+
+name
+
+kabi qismlarga bo‘lib ko‘rsatadi.
+Bu path ni chuqur tahlil qilishda juda foydali.
+
+path.format()
+
+parse() ning teskarisi deyish mumkin.
+Path qismlaridan yana bitta to‘liq path yasab beradi.
+
+path.isAbsolute()
+
+Berilgan yo‘l absolute path ekanmi yoki yo‘qmi, shuni tekshiradi.
+Natija odatda true yoki false bo‘ladi.
+
+path.normalize()
+
+Path ichidagi noto‘g‘ri yoki ortiqcha belgilarni tartibga soladi.
+Masalan, ortiqcha slashlar yoki .., . kabi qismlarni tozalab, yo‘lni normal ko‘rinishga keltiradi.
+
+path.relative()
+
+Ikki path orasidagi nisbiy yo‘lni topib beradi.
+Bir joydan ikkinchi joyga qanday nisbiy yo‘l bilan borishni hisoblab beradi.
+
+path.sep
+
+Bu method emas, lekin path modulidagi muhim property.
+Operatsion sistemadagi path separatorni bildiradi.
+Masalan, ba’zi sistemalarda /, boshqalarida \ bo‘lishi mumkin.
+
+path.delimiter
+
+Bu ham method emas.
+Bir nechta path qiymatlari ajratiladigan belgini bildiradi.
+Masalan, environment variable lar ichida ishlatiladi.
+
+path.posix
+
+POSIX uslubidagi path bilan ishlash uchun ishlatiladi.
+Ya’ni / formatdagi yo‘llar bilan ishlash uchun qulay.
+
+path.win32
+
+Windows uslubidagi path bilan ishlash uchun ishlatiladi.
+Ya’ni \ formatdagi yo‘llar uchun kerak bo‘ladi.
+
+path.toNamespacedPath()
+
+Asosan Windows ga xos maxsus path formatiga o‘tkazish uchun ishlatiladi.
+Oddiy ishlarda kam ishlatiladi, ko‘proq maxsus holatlarda kerak bo‘ladi.
+
+Qisqacha eslab qolish uchun:
+
+join → yo‘llarni ulaydi
+
+resolve → to‘liq path qiladi
+
+basename → fayl nomini oladi
+
+dirname → papka yo‘lini oladi
+
+extname → kengaytmani oladi
+
+parse → path ni bo‘laklaydi
+
+format → bo‘laklardan path yasaydi
+
+isAbsolute → absolute yoki yo‘qligini tekshiradi
+
+normalize → path ni tartiblaydi
+
+relative → ikki path orasidagi nisbiy yo‘lni topadi
