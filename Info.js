@@ -79,3 +79,18 @@
 
 
 
+// const Events = require("events");
+
+
+// class Logger extends Events {
+//     log(massage){
+//         console.log(massage);
+//         this.emit("login" , {id : 1 , password : 200202 , email : "admin@gmail.com" , name : "Muhammad Umar" , img : "https://photo.uz/" , url : "https:shahk-dev.netlify.app "});
+//     }
+// }
+
+// module.exports = Logger;
+
+
+
+
