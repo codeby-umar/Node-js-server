@@ -87,68 +87,68 @@ const fs = require("fs")
 
 // Bizning birinchi serverimiz
 
-// const http = require("http");
+const http = require("http");
 
-// const server = http.createServer((req, res) => {
+const server = http.createServer((req, res) => {
     
-//      const users = [
-//         {
-//             id : 1,
-//             age : 18 ,
-//             name : "Muhammad Umar",
-//             login : "codebyumar@gmail.com",
-//             password : 12345678,
-//             Job : "Programmer"
-//         },
-//         {
-//             id : 2,
-//             age : 18 ,
-//             name : "Muhammad Umar",
-//             login : "codebyumar@gmail.com",
-//             password : 12345678,
-//             Job : "Programmer"
-//         },
-//         {
-//             id : 3,
-//             age : 18 ,
-//             name : "Muhammad Umar",
-//             login : "codebyumar@gmail.com",
-//             password : 12345678,
-//             Job : "Programmer"
-//         },
-//         {
-//             id : 4,
-//             age : 18 ,
-//             name : "Muhammad Umar",
-//             login : "codebyumar@gmail.com",
-//             password : 12345678,
-//             Job : "Programmer"
-//         },
-//      ]
+     const users = [
+        {
+            id : 1,
+            age : 18 ,
+            name : "Muhammad Umar",
+            login : "codebyumar@gmail.com",
+            password : 12345678,
+            Job : "Programmer"
+        },
+        {
+            id : 2,
+            age : 18 ,
+            name : "Muhammad Umar",
+            login : "codebyumar@gmail.com",
+            password : 12345678,
+            Job : "Programmer"
+        },
+        {
+            id : 3,
+            age : 18 ,
+            name : "Muhammad Umar",
+            login : "codebyumar@gmail.com",
+            password : 12345678,
+            Job : "Programmer"
+        },
+        {
+            id : 4,
+            age : 18 ,
+            name : "Muhammad Umar",
+            login : "codebyumar@gmail.com",
+            password : 12345678,
+            Job : "Programmer"
+        },
+     ]
      
 
-//     if (req.url === "/") {
-//         res.write("Bizning home pagesimiz tayyor ...")
-//         res.end()
-//     }
-//     if (req.url == "/api") {
-//         res.write(JSON.stringify({
-//             "id": 1,
-//             "name": "Muhammad umar",
-//             "Familya": "Turgunboyov",
-//             "age": 17
-//         }))
-//         res.end()
-//     }
+    if (req.url === "/") {
+        res.write("Bizning home pagesimiz tayyor ...")
+        res.end()
+    }
+    if (req.url == "/api") {
+        res.write(JSON.stringify({
+            "id": 1,
+            "name": "Muhammad umar",
+            "Familya": "Turgunboyov",
+            "age": 17
+        }))
+        res.end()
+    }
 
-//     if(req.url === "/login"){
-//         res.write(JSON.stringify(users));
-//         res.end()
-//     }else{
-//         console.log("xatolik bu pages bor..")
-//     }
+    if(req.url === "/login"){
+        res.write(JSON.stringify(users));
+        res.end()
+    }else{
+        console.log("xatolik bu pages bor..")
+    }
 
-// });
+});
 
-// server.listen(8000);
-// console.log(`Sizni portingiz ${server.address().port} ishlashni boshladim ...`);
+server.listen(8000);
+console.log(`Sizni portingiz ${server.address().port} ishlashni boshladim ...`);
