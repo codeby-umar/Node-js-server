@@ -59,7 +59,7 @@
 
 // console.log(Create_Folder)
 
-const umar = require('path')
+// const umar = require('path')
 
 
 // const get_Folders = umar.basename("documents/reports.pdf")
@@ -76,4 +76,6 @@ const umar = require('path')
 
 // const hum = umar.relative("/home/umar/docs" , "/home/umar/images/photo.jpg")
 // console.log(hum)
+
+
 
