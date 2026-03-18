@@ -1,25 +1,34 @@
+// const express = require("express");
+// const app = express();
+
+// app.get('/' , (req , res)=>{
+//    res.send("Salom sizning birinchi Websitingiz yurib turibdi backend")
+// })
+
+// app.get('/about' , (req , res)=>{
+//    res.send("Salom bu About pages")
+// })
+
+
+// const port = process.env.PORT || 5000;
+
+// app.listen(port, () => {
+//    console.log(`Server http://localhost:${port} da ishga tushdi 🚀`);
+// });
+
+
+
+
 const express = require("express");
 const app = express();
 
-app.get('/' , (req , res)=>{
-   res.send("Salom sizning birinchi Websitingiz yurib turibdi backend")
-})
-
-app.get('/about' , (req , res)=>{
-   res.send("Salom bu About pages")
-})
-
-
-const port = process.env.PORT || 5000;
-
-app.listen(port, () => {
-   console.log(`Server http://localhost:${port} da ishga tushdi 🚀`);
+app.get('/', (req, res) => {
+    res.send({massage : "Hello world"});
 });
 
 
-
-
-
+app.listen(3000);
+console.log(`Sining wensiteingiz  3000 port ochmoqda ....`)
 
 
 
