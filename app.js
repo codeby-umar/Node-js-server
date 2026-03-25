@@ -41,7 +41,7 @@ console.log(`Sining wensiteingiz  3000 port ochmoqda ....`)
 
 
 
-"use strict"; // use strict - oddiyroq qilib aytganda xatoliklarda qochish xisoblanadi
+// "use strict"; // use strict - oddiyroq qilib aytganda xatoliklarda qochish xisoblanadi
 
 // let massage;
 // massage = "Salom Muhammad Umar"
