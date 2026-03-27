@@ -18,6 +18,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "helmet": "^8.1.0",
+    "morgan": "^1.10.1",
     "nodemon": "^3.1.14"
   },
   "dependencies": {
@@ -27,6 +29,7 @@
     "brace-expansion": "^5.0.4",
     "braces": "^3.0.3",
     "chokidar": "^3.6.0",
+    "config": "^4.4.1",
     "debug": "^4.4.3",
     "express": "^5.2.1",
     "fill-range": "^7.1.1",
@@ -42,6 +45,7 @@
     "normalize-path": "^3.0.0",
     "picomatch": "^2.3.1",
     "pstree.remy": "^1.1.8",
+    "pug": "^3.0.4",
     "readdirp": "^3.6.0",
     "semver": "^7.7.4",
     "simple-update-notifier": "^2.0.0",
